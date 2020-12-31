@@ -11,7 +11,7 @@ services.AddSingleton<ISqlHelper>(x => ActivatorUtilities.CreateInstance<SqlHelp
 
 
 ## Utilities.Api
-#### ApiHelper (HttpClient) helper. It used IHttpClientFactory. [How to make HTTP requests](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-5.0 "How to use IHttpClientFactory and HttpClient to make the Http call.")
+#### ApiHelper (HttpClient) helper. It uses IHttpClientFactory. [How to make HTTP requests](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-5.0 "How to use IHttpClientFactory and HttpClient to make the Http call.")
 
 To use this Helper register in Startup.cs ConfigureServices method for DI.
 ``` C#
