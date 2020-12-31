@@ -20,6 +20,6 @@ services.AddHttpClient("MyApi" client =>
 {
     client.BaseAddress = new System.Uri("https://api.mywebsite.com"),
     client.DefaultRequestHeaders.Add("Accept", "application/json") // Not necessary
-});`
+});
 services.AddSingleton<IApiHelper, ApiHelper>();
 ```
