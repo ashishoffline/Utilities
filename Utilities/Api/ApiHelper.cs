@@ -49,7 +49,7 @@ namespace Utilities.Api
         #endregion
 
         #region POST
-        public async Task<HttpResponseMessage> PostAsync(string requestUri, object content, string name = null)
+        public async Task<HttpResponseMessage> PostAsync<T>(string requestUri, T content, string name = null) where T : class
         {
             HttpRequestMessage request = new HttpRequestMessage
             {
@@ -63,7 +63,7 @@ namespace Utilities.Api
 
             return httpResponse;
         }
-        public HttpResponseMessage Post(string requestUri, object content, string name = null)
+        public HttpResponseMessage Post<T>(string requestUri, T content, string name = null) where T : class
         {
             HttpRequestMessage request = new HttpRequestMessage
             {
@@ -80,7 +80,7 @@ namespace Utilities.Api
         #endregion
 
         #region PUT
-        public async Task<HttpResponseMessage> PutAsync(string requestUri, object content, string name = null)
+        public async Task<HttpResponseMessage> PutAsync<T>(string requestUri, T content, string name = null) where T : class
         {
             HttpRequestMessage request = new HttpRequestMessage
             {
@@ -94,7 +94,7 @@ namespace Utilities.Api
 
             return httpResponse;
         }
-        public HttpResponseMessage Put(string requestUri, object content, string name = null)
+        public HttpResponseMessage Put<T>(string requestUri, T content, string name = null) where T : class
         {
             HttpRequestMessage request = new HttpRequestMessage
             {
